@@ -77,12 +77,11 @@ h3
     font-weight: bold;
 }
 
-/* Couleur icones */
+/* Couleur et options des icones */
 
 .fas
 {
     color:#0065FC;
-    background-color:red;
     padding: 5px 5px;
     border-radius: 100%;
 }
@@ -92,3 +91,18 @@ h3
     color:#000000;
 }
 
+.bluestar
+{
+    color:#0065FC;
+}
+
+.greystar
+{
+    color:red;
+}
+
+.Note
+{
+    display: inline;
+    list-style: none;
+}
