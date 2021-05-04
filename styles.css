@@ -103,6 +103,25 @@ h3
 
 .Note
 {
-    display: inline;
+    display: inline-flex;
     list-style: none;
+}
+
+/* Test div Hébergements */
+
+#cannebiere, #port, #mouettes, #mer, #panier, #amina
+{
+    display:block;
+    float: left;
+    width: 17%;
+    height: 11%;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 5px; 
+}
+
+#Hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
 }
