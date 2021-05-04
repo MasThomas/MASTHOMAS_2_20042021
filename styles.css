@@ -1,0 +1,99 @@
+body
+{
+    background-color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+#Hebergements, footer, aside
+{
+    background-color: #F2F2F2 ;
+}
+
+/* Suppression des liens déjà visités en violet, et des liens à visiter en bleu */
+a 
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Police des titres */
+
+h3
+{
+    font-weight: bold;
+    font-size: initial;
+}
+
+/* Supression des puces et de la tabulation ul */
+
+ul 
+{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+/* Préparation de la fonction :hover pour les Filtres */
+
+#Eco:hover
+{
+    color:blue;
+}
+
+#Familial:hover
+{
+    color:blue;
+}
+
+#Romantique:hover
+{
+    color:blue;
+}
+
+#Animaux:hover
+{
+    color:blue;
+}
+
+/* Tentative Flexbox dans le footer */
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+h3
+{
+    align-content: center;
+}
+
+/* Test boutons Filtres */
+
+#Eco, #Familial, #Romantique, #Animaux
+{
+    display:block;
+    border: 2px solid #F2F2F2;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Couleur icones */
+
+.fas
+{
+    color:#0065FC;
+    background-color:red;
+    padding: 5px 5px;
+    border-radius: 100%;
+}
+
+#populaires .fas
+{
+    color:#000000;
+}
+
