@@ -1,27 +1,75 @@
-body
+/* Configuration générales */
+
+html, body
 {
     background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
-#Hebergements, footer, aside
+/* Configuration du Header */
+header
 {
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+}
+
+#Logo
+{
+    float: left;
+    margin: 20px;
+}
+
+#ancres
+{
+    justify-content: right;
+}
+.ancres_li li
+{
+    display: inline;
+}
+
+/* Positionnement et configuration des sections */
+
+#Hebergements
+{
+    display: flex;
+    align-items: flex-start;
+    width: 800px;
+    height: 500px%;
+    background-color: #F2F2F2 ;
+    margin:10px;
+    padding:10px;    
+}
+
+aside
+{
+    float:right;
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2 ;
     margin:10px;
     padding:10px;
 }
 
-/* Suppression des liens déjà visités en violet, et des liens à visiter en bleu */
-a 
+#Activites
 {
-    text-decoration: none;
-    color: #000000;
+    display: inline-block;
+    flex-direction: row;
 }
 
-/* Positionnement du aside */
-aside
+/* Configuration du footer */
+
+footer
 {
-    float: right;
+    background-color: #F2F2F2 ;
+    margin:0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Police des titres */
@@ -39,44 +87,23 @@ ul
 
 /* Préparation de la fonction :hover pour les Filtres */
 
-#Eco:hover
+#Eco:hover, #Familial:hover, #Romantique:hover, #Animaux:hover 
 {
     color:blue;
 }
 
-#Familial:hover
+/* Suppression des liens déjà visités en violet, et des liens à visiter en bleu */
+a 
 {
-    color:blue;
+    text-decoration: none;
+    color: #000000;
 }
 
-#Romantique:hover
-{
-    color:blue;
-}
-
-#Animaux:hover
-{
-    color:blue;
-}
-
-/* Tentative Flexbox dans le footer */
-
-footer
-{
-    display: flex;
-    justify-content: space-around;
-}
-
-h3
-{
-    align-content: center;
-}
-
-/* Test boutons Filtres */
+/* Boutons Filtres */
 
 #Eco, #Familial, #Romantique, #Animaux
 {
-    display:block;
+    display:inline-flex;
     border: 2px solid #F2F2F2;
     width: 200px;
     text-align: center;
@@ -104,7 +131,7 @@ h3
     color:#0065FC;
 }
 
-.greystar
+.greystar /* A modifier en gris */
 {
     color:red;
 }
