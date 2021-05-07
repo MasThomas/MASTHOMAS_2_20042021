@@ -25,21 +25,78 @@ header
 
 #ancres
 {
-    justify-content: right;
+    float: right;
+    margin:30px;
 }
-.ancres_li li
+
+#ancres_li li
 {
     display: inline;
 }
 
+#ancre_hebergement, #ancre_activites, #ancre_inscription
+{
+    margin:20px;
+}
+
+#ancre_hebergement
+{
+   color: #0065FC;
+   border-top: #0065FC;
+
+}
+
+/* Boutons Filtres et Hover Filtres */
+
+#Eco, #Familial, #Romantique, #Animaux
+{
+    display:inline-flex;
+    border: 2px solid #F2F2F2;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#Eco:hover, #Familial:hover, #Romantique:hover, #Animaux:hover 
+{
+    color:blue;
+}
+
 /* Positionnement et configuration des sections */
+
+#cannebiere, #port, #mouettes, #mer, #panier, #amina
+{
+    display:block;
+    float: left;
+    width: 17%;
+    height: 11%;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+
+#Hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:10px;
+}
+
+section img, aside img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 #Hebergements
 {
     display: flex;
     align-items: flex-start;
     width: 800px;
-    height: 500px%;
+    height: 50%;
     background-color: #F2F2F2 ;
     margin:10px;
     padding:10px;    
@@ -51,9 +108,14 @@ aside
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2 ;
-    margin:10px;
-    padding:10px;
+    border-radius: 10px;
+    padding:20px;
+    margin-top: 0px;
+    margin-right:40px;
+
 }
+
+
 
 #Activites
 {
@@ -72,9 +134,7 @@ footer
     justify-content: space-around;
 }
 
-/* Police des titres */
-
-
+/* Configurations générales*/
 /* Supression des puces et de la tabulation ul */
 
 ul 
@@ -84,32 +144,11 @@ ul
     padding-left: 0px;
 }
 
-
-/* Préparation de la fonction :hover pour les Filtres */
-
-#Eco:hover, #Familial:hover, #Romantique:hover, #Animaux:hover 
-{
-    color:blue;
-}
-
 /* Suppression des liens déjà visités en violet, et des liens à visiter en bleu */
 a 
 {
     text-decoration: none;
     color: #000000;
-}
-
-/* Boutons Filtres */
-
-#Eco, #Familial, #Romantique, #Animaux
-{
-    display:inline-flex;
-    border: 2px solid #F2F2F2;
-    width: 200px;
-    text-align: center;
-    font-size: 1.2em;
-    border-radius: 10px;
-    font-weight: bold;
 }
 
 /* Couleur et options des icones */
@@ -140,23 +179,4 @@ a
 {
     display: inline-flex;
     list-style: none;
-}
-
-/* Test div Hébergements */
-
-#cannebiere, #port, #mouettes, #mer, #panier, #amina
-{
-    display:block;
-    float: left;
-    width: 17%;
-    height: 11%;
-    border-color: #FFFFFF;
-    border-style: solid;
-    border-radius: 5px; 
-}
-
-#Hebergements
-{
-    display: flex;
-    flex-wrap: wrap;
 }
