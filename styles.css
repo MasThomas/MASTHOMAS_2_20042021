@@ -5,8 +5,10 @@ html, body
     background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     position: relative;
-    margin: 0;
+    margin-left: 54px;
+    margin-right: 50px;
     padding: 0;
+    max-width: 1440px;
 }
 
 /* Configuration du Header */
@@ -39,32 +41,96 @@ header
     margin:20px;
 }
 
-#ancre_hebergement
+#ancre_hebergement a
 {
    color: #0065FC;
-   border-top: #0065FC;
-
+   border-top: solid #0065FC;
 }
 
-/* Boutons Filtres et Hover Filtres */
-
-#Eco, #Familial, #Romantique, #Animaux
+#ancre_inscription a
 {
-    display:inline-flex;
-    border: 2px solid #F2F2F2;
-    width: 200px;
+    color: #0065FC;
+    font-weight: bold;
+ }
+
+/* Boutons Recherche, Filtres et Hover Filtres */
+
+#map_marker
+{
+    background-color: #F2F2F2;
+    padding: 16px;
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+}
+
+#map_marker i
+{
+    color: #000000;
+}
+
+input
+{
+    width: 234px;
+    height: 47px;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
-    font-size: 1.2em;
-    border-radius: 10px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-right:none;
+}
+
+form button
+{
+    background-color: #0065FC;
+    color: #FFFFFF;
+    width: 134px;
+    height: 51px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    border:none;
+    margin-bottom:30px;
+}
+
+#Section_filtres button
+{
+    border: 2px solid #d9d9d9;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-top-right-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;    
+    font-weight: bold;
+    border-left:none;
+    margin-right: 12px;
+  /*  margin-left:-25px; */
+}
+
+#Filtres
+{
+    margin-right:30px;
     font-weight: bold;
 }
 
-#Eco:hover, #Familial:hover, #Romantique:hover, #Animaux:hover 
+#Section_filtres .fas
 {
-    color:blue;
+    border-radius: 50%;
+    padding: 16px;
+    background-color: #deebff;
+    margin-right: 0px;
 }
 
+/* #Section_filtres buttons:hover 
+{
+    none
+}*/
+
+
 /* Positionnement et configuration des sections */
+
+main
+{
+    display:inline-block;
+}
 
 #cannebiere, #port, #mouettes, #mer, #panier, #amina
 {
@@ -75,31 +141,30 @@ header
     border-color: #FFFFFF;
     border-style: solid;
     border-radius: 5px;
+    margin: 20px;
 }
 
+#populaires img, #Hebergements img, #Activites img
+{
+    max-width: 50%;
+    max-height: 50%;
+}
 
 #Hebergements
 {
     display: flex;
     flex-wrap: wrap;
-    border-radius:10px;
+    align-items:stretch;
+    border-radius:20px;
+    background-color: #F2F2F2;
+    margin-right: 1.4%;
+    width: 61.1%;
+    height: 33%;
 }
 
-section img, aside img
+#Hebergements h2, #Hebergements p
 {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#Hebergements
-{
-    display: flex;
-    align-items: flex-start;
-    width: 800px;
-    height: 50%;
-    background-color: #F2F2F2 ;
-    margin:10px;
-    padding:10px;    
+    width: 100%;
 }
 
 aside
@@ -108,11 +173,15 @@ aside
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2 ;
-    border-radius: 10px;
-    padding:20px;
-    margin-top: 0px;
-    margin-right:40px;
+    border-radius: 20px;
+    margin-right: 3.5%;
+    width: 29.1%;
+    height: 33%;
+}
 
+#soleil, #coeur, #bleu_blanc 
+{
+    display: inline-block;
 }
 
 
@@ -122,6 +191,7 @@ aside
     display: inline-block;
     flex-direction: row;
 }
+
 
 /* Configuration du footer */
 
@@ -163,6 +233,7 @@ a
 #populaires .fas
 {
     color:#000000;
+    padding-right: 0px;
 }
 
 .bluestar
@@ -178,5 +249,4 @@ a
 .Note
 {
     display: inline-flex;
-    list-style: none;
 }
