@@ -28,38 +28,33 @@ body
 header
 {
     margin-left: 50px;
-    width: 1390px;
+    margin-right: 50px;
+    width: 1340px;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #Logo
 {
-    float: left;
+    padding-top: 20px;
     margin: 20px;
 }
 
 #ancres
 {
-    float: right;
-    margin:30px;
-    margin-right: 50px;
-}
-
-#ancres_li li
-{
-    display: inline;
-}
-
-#ancre_hebergement, #ancre_activites, #ancre_inscription
-{
-    margin:20px;
+    width: 375px;
+    margin: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 #ancre_hebergement a
 {
-   color: #0065FC;
-   border-top: solid #0065FC;
-   padding-top: 30px;
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+    padding-top: 30px;
 }
 
 #ancre_inscription a
@@ -438,5 +433,3 @@ a
 {
     display: inline-flex;
 }
-
-@media -
