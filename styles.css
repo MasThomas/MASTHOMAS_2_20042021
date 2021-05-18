@@ -272,10 +272,6 @@ strong
     font-weight: 700 ;
 }
 
-#Hebergements h3
-{
-
-}
 /* Aside Les plus Populaires */
 
 aside
@@ -293,7 +289,7 @@ aside
 {
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px 10px 20px;
+    padding: 10px 40px 0px 30px;
     align-items: center;
 }
 
@@ -310,7 +306,7 @@ aside
 {
     height: 140px;
     display: flex;
-    width: 350px;
+    width: 340px;
     padding: 5px;
     background-color: #FFFFFF;
     margin: 10px;
@@ -330,7 +326,27 @@ aside
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    justify-content: center;
+    width: 180px;
 }
+
+.hotel_name
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Prix
+{
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+.trend_cards li
+{
+    padding-bottom: 15px;
+}
+
 
 /* Section Activités */
 
