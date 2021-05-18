@@ -162,11 +162,13 @@ form button
     position: relative;
 }
 
-/* #Section_filtres buttons:hover 
+.Bouton:hover 
 {
-    none
-}*/
-
+    color:white;
+    background-color: #0065FC;
+    border-color: #FFFFFF ;
+    transition: all 0.8s 0s;
+}
 
 /* Positionnement et configuration des sections */
 
