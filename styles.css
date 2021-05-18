@@ -63,12 +63,13 @@ header
     font-weight: bold;
 }
 
-strong
-{
-    font-weight: bold;
-}
+/* Bouton Recherche */
 
-/* Boutons Recherche, Filtres et Hover Filtres */
+#recherche h1
+{
+    font-weight: 700;
+    margin-bottom: 0;
+}
 
 #map_marker
 {
@@ -115,27 +116,44 @@ form button
     margin-bottom:30px;
 }
 
-#Section_filtres button
+/* Filtres et Hover Filtres */
+
+#Filtres
 {
+    display: flex;
+    flex-direction: row;
+}
+
+.Filtres_boutons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+
+.Filtres_boutons span
+{
+    display: flex;
+    align-items: center;
     border: 2px solid #d9d9d9;
-    height: 50px;
     background-color: #FFFFFF;
     border-top-right-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;    
     font-weight: bold;
     border-left:none;
-    margin-right: 12px;
-    margin-left:-25px;
-    padding-top: 3px;
+    margin-right: 20px;
+    margin-left:-20px;
+    padding-right: 20px;
+    padding-left: 25px;
 }
 
-#Filtres
+#Filtres p
 {
     margin-right:30px;
     font-weight: bold;
 }
 
-#Section_filtres .fas
+#Filtres .fas
 {
     border-radius: 50%;
     padding: 16px;
@@ -159,6 +177,11 @@ form button
 }
 
 /* Section Hebergements */
+
+strong
+{
+    font-weight: bold;
+}
 
 .heb_card
 {
