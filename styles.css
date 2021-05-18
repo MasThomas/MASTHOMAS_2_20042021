@@ -160,6 +160,7 @@ form button
     background-color: #deebff;
     margin-right: 0px;
     position: relative;
+
 }
 
 .Bouton:hover 
@@ -168,6 +169,10 @@ form button
     background-color: #0065FC;
     border-color: #FFFFFF ;
     transition: all 0.8s 0s;
+    margin-top: -3.5px;
+    margin-bottom: -3.5px;
+    padding-right: 30px;
+    padding-left: 35px;
 }
 
 /* Positionnement et configuration des sections */
