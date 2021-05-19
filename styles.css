@@ -1,36 +1,82 @@
-/* Configuration générales */
+
+/* Configurations générales*/
 
 html
 {
     background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     position: relative;
-    padding: 0px;
-    max-width: 1440px;
-    height: 100%;
-    max-height: 1884px;
-}
-
-#recherche, #premier_bloc, #Activites
-{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
 }
 
 body
 {
-    margin: 0px;
+    max-width: 1440px;
+    padding: 0;
+    margin: 0;
+}
+
+strong
+{
+    font-weight: bold;
+}
+
+/* Supression des puces et de la tabulation ul */
+
+ul 
+{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/* Suppression des liens déjà visités en violet, et des liens à visiter en bleu */
+a 
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Couleur et options des icones */
+
+.fas
+{
+    color:#0065FC;
+    padding: 5px 5px;
+    border-radius: 100%;
+}
+
+#populaires .fas
+{
+    color:#000000;
+    padding-right: 0px;
+    font-size: 1.2em;
+}
+
+.Note .fas, .bluestar
+
+{
+    color:#0065FC;
     padding: 0px;
-    height: 100%;
+    margin:0px;
+}
+
+.greystar
+{
+    color: #F2F2F2;
+}
+
+.Note
+{
+    display: inline-flex;
 }
 
 /* Configuration du Header */
 header
 {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 1340px;
-    height: 100px;
+    width: 100%;
+    height: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -43,25 +89,26 @@ header
 
 #ancres
 {
-    width: 375px;
-    margin: 35px;
+    width: 28%;
+    margin: 3%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-#ancre_hebergement a
-{
-    color: #0065FC;
-    border-top: solid 2px #0065FC;
-    padding-top: 30px;
-}
-
-#ancre_inscription a
+.ancre_inscription a, .ancre_hebergement a
 {
     color: #0065FC;
     font-weight: bold;
 }
+
+.ancre_hover a:hover
+{
+    border-top: solid 2px #0065FC;
+    padding-top: 30px;
+}
+
+
 
 /* Bouton Recherche */
 
@@ -190,8 +237,8 @@ form button
 
 #premier_bloc
 {
-    max-width: 1440px;
     display: flex;
+    width: 100%;
 }
 
 #premier_bloc h3
@@ -201,16 +248,23 @@ form button
 
 /* Section Hebergements */
 
+#Hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:stretch;
+    border-radius:20px;
+    background-color: #F2F2F2;
+    margin-right: 3%;
+    width: 65%; /* 880 x 626 px */
+    height: 100%;
+}
+
 #Hebergements h2
 {
     padding-left: 30px;
     margin-top: 30px;
     margin-bottom: 0px;
-}
-
-strong
-{
-    font-weight: bold;
 }
 
 #bloc_cards
@@ -240,16 +294,10 @@ strong
     border-radius: 15px 15px 0px 0px;
 }
 
-#Hebergements
+.hebergements_txt
 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items:stretch;
-    border-radius:20px;
-    background-color: #F2F2F2;
-    margin-right: 40px;
-    width: 880px;
-    height: 626px;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 #Hebergements p, ul
@@ -259,12 +307,6 @@ strong
     margin: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-.hebergements_txt
-{
-    padding-left: 10px;
-    padding-top: 5px;
 }
 
 .hebergements_txt :first-child, .hotel_details :nth-child(1), h3
@@ -281,8 +323,9 @@ aside
     background-color: #F2F2F2 ;
     border-radius: 20px;
     margin-right: 0px;
-    width: 420px;
-    height: 626px;
+    width: 32%; /* 420 x 626px */
+    height: 100%;
+    padding-bottom: 5px;
 }
 
 #trending_title
@@ -425,7 +468,7 @@ footer
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
 }
 
 footer li
@@ -439,53 +482,13 @@ footer li
     margin-left: -180px;
 }
 
-/* Configurations générales*/
-/* Supression des puces et de la tabulation ul */
+/* Media Queries */ 
 
-ul 
-{
-    list-style-type: none;
-    margin-left: 0px;
-    padding-left: 0px;
-}
+@media all and (min-width:1440px){
 
-/* Suppression des liens déjà visités en violet, et des liens à visiter en bleu */
-a 
-{
-    text-decoration: none;
-    color: #000000;
-}
-
-/* Couleur et options des icones */
-
-.fas
-{
-    color:#0065FC;
-    padding: 5px 5px;
-    border-radius: 100%;
-}
-
-#populaires .fas
-{
-    color:#000000;
-    padding-right: 0px;
-    font-size: 1.2em;
-}
-
-.Note .fas, .bluestar
-
-{
-    color:#0065FC;
-    padding: 0px;
-    margin:0px;
-}
-
-.greystar
-{
-    color: #F2F2F2;
-}
-
-.Note
-{
-    display: inline-flex;
-}
+    body
+    {
+      margin-left: 0 auto;
+      margin-right: 0 auto;
+    }
+    }
