@@ -13,8 +13,7 @@ html
 body
 {
     max-width: 1440px;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
+
 }
 
 strong
@@ -159,6 +158,16 @@ form button
     border-bottom-right-radius: 20px 20px;
     border:none;
     margin-bottom:30px;
+}
+
+form button .fas
+{
+    display: none;
+}
+
+form p
+{
+    font-weight: bold;
 }
 
 /* Filtres et Hover Filtres */
@@ -466,10 +475,9 @@ footer
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 30px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    padding-bottom: 10px;
 }
 
 footer li
@@ -497,17 +505,17 @@ footer li
 
 @media (min-width:1200px) and (max-width:1439px) {
 
+    html
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     .heb_card
     {
     width: 210px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5px;
-    background-color: #FFFFFF;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #e4e4e4;
+    
     }
 
     .hebergements_txt
@@ -520,24 +528,25 @@ footer li
     .trend_cards
     {
     height: 140px;
-    display: flex;
     width: 310px;
-    padding: 5px;
-    background-color: #FFFFFF;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #e4e4e4;
+
     }
 
     #Activites img
     {
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-    width: 250px;
+        width: 100%;
+        max-width: 250px;
+        min-width: 200px;
     }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
+
+    html
+    {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 
     #ancres
     {
@@ -621,5 +630,254 @@ footer li
         padding-top: 30px;
         margin-left: 0px;
     }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    html
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #Logo
+    {
+        padding-top: 0px;
+    }
+
+    .ancre_hover, .Filtres_boutons
+    {
+        pointer-events: none;
+    }
+
+    #ancres
+    {
+        margin-right: 0px;
+        margin-top: 30px;
+        width: 50%;
+    }
+
+    #recherche h1
+    {
+        text-align: center;
+    }
+
+    #recherche :nth-child(2)
+    {
+        text-align: center;
+    }
+
+    #recherche form
+   {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 30px;
+       padding-bottom: -30px;
+       height: 51px;
+   } 
+
+   #Filtres p
+   {
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+   }
+   
+   #Filtres
+   {
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   #Filtres span
+   {
+       margin-right: 10px;
+       padding-right: 12px
+   }
+
+   #premier_bloc
+   {
+       flex-direction: column-reverse;
+   }
+
+   #populaires
+   {
+       width: 100%;
+       margin-bottom: 20px;
+   }
+
+   #trending_title
+   {
+       padding: 10px 20px 10px 20px;
+   }
+
+   #populaires h2
+   {
+       text-align: center;
+       width: 100%;
+   }
+
+   .trend_cards
+   {
+       width:400px;
+       height: 200px;
+   }
+
+   .trend_cards img
+   {
+       width: 200px;
+   }
+
+   #Hebergements
+   {
+       width: 100%;
+   }
+
+   #Hebergements h2
+   {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+   }
+
+   .heb_card
+   {
+       margin-left: 20px;
+       margin-right: 20px;
+       width: 300px;
+   }
+
+   #Hebergements img
+   {
+       height: 150px;
+   }
+
+   #Activites_cards
+   {
+       flex-direction: column;
+       height: 100%;
+       
+   }
+
+   #Activites img
+   {
+       width: 100%;
+       height: 200px;
+   }
+
+   .Activites_Duo
+   {
+       flex-direction: row;
+   }
+
+   #Pomegues, #Frioul, #Ndlg, #Longchamp
+   {
+       width: 300px;
+   }
+
+   footer
+   {
+       flex-direction: column;
+   }
+
+   .footer
+   {
+       margin-left: 0;
+   }
+
+   footer h3, ul
+   {
+       text-align: center;
+   }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    body
+    {
+        margin: 0;
+    }
+
+    .ancre_hover, .Filtres_boutons
+    {
+        pointer-events: none;
+    }
+
+    #Logo
+    {
+        padding-top: 0px;
+    }
+
+    #recherche
+    {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #Filtres
+    {
+        flex-wrap: wrap;
+    }
+
+    #Filtres p
+    {
+        width: 100%;
+    }
+
+    .Filtres_boutons
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form button
+    {
+        width: 80px;
+    }
+    form p
+    {
+        display: none;
+    }
+
+    form button .fas
+    {
+        display: initial;
+        color: #FFFFFF;
+    }
+
+    #premier_bloc
+    {
+        flex-direction: column-reverse;
+    }
+
+    #populaires
+    {
+        width: 100%;
+        border-radius: initial;
+        margin-bottom: 20px;
+    }
+
+    #populaires a, .trend_cards
+    {
+        width: 95%;
+    }
+
+    #populaires img
+    {
+        width: 40%;
+    }
+
+    #Hebergements
+    {
+        background-color: #FFFFFF;
+        width: 100%;
+    }
+
+    #bloc_cards
+    {
+        width: 100%;
+    }
+
 
 }
