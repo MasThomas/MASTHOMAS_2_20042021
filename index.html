@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/1f69c9467a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-
  
       <body>
     
@@ -19,11 +19,11 @@
             <img src="images/logo/Reservia.svg" alt="Logo Réservia"/>
         </div>
 
-        <div id="ancres">
-                <div class="ancre_hebergement ancre_hover"><a href="#Hebergements">&emsp;Hébergements&emsp;</a></div>
-                <div class="ancre_activites"><a href="#Activites">&emsp;Activités&emsp;</a></div>
-                <div class="ancre_inscription"><a href="#">&emsp;S'inscrire&emsp;</a></div>
-        </div>
+        <nav id="ancres">
+                <div id="ancre_hebergement"><a href="#Hebergements">&emsp;Hébergements&emsp;</a></div>
+                <div id="ancre_activites"><a href="#Activites">&emsp;Activités&emsp;</a></div>
+                <div id="ancre_inscription"><a href="#">&emsp;S'inscrire&emsp;</a></div>
+        </nav>
     </header>
 
     <!-- Première section avec le champ de recherche et les filtres -->
@@ -63,8 +63,11 @@
                 </a>
             </div>
 
-            <p id="Info"><i class="fas fa-info fa-xs"></i> Plus de 500 logements sont disponibles dans cette ville</p>
-    </section>
+            <span id="Info">
+                <i class="fas fa-info fa-xs"></i>
+                <p> Plus de 500 logements sont disponibles dans cette ville</p>
+            </span>
+        </section>
 
     <!-- Premier Bloc Hébergements + Populaires -->
         
@@ -75,7 +78,7 @@
         <section id="Hebergements">
             <h2>Hébergements à Marseille</h2>
             <div id="bloc_cards">
-                <div>
+                <div class="heb_container">
                     <a href="#">
                         <div class="heb_card">
                             <img src="images/hebergements/4_small/cannebiere.jpg" alt="Photo hébergement"/>
@@ -93,7 +96,7 @@
                         </div>
                     </a>
                 </div>
-                <div>
+                <div class="heb_container">
                     <a href="#">
                         <div class="heb_card">
                             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo hébergement"/>
@@ -111,7 +114,7 @@
                         </div>
                     </a>
                 </div>
-                <div>
+                <div class="heb_container">
                     <a href="#">
                         <div class="heb_card">
                             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo hébergement"/>
@@ -129,7 +132,7 @@
                         </div>
                     </a>
                 </div>
-                <div>
+                <div class="heb_container">
                     <a href="#">
                         <div class="heb_card">
                             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo hébergement"/>
@@ -147,7 +150,7 @@
                         </div>
                     </a>
                 </div>
-                <div>
+                <div class="heb_container">
                     <a href="#">
                         <div class="heb_card">
                             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo hébergement"/>
@@ -165,7 +168,7 @@
                         </div>
                     </a>
                 </div>
-                <div>
+                <div class="heb_container">
                     <a href="#">
                         <div class="heb_card">
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo hébergement"/>
