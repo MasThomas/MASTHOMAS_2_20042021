@@ -831,10 +831,14 @@ footer li
     header
     {
         justify-content: flex-end;
+        margin: 0 0 40px 0;
     }
+
     #Logo
     {
-        padding: 30px 90px 0 0;
+        position: absolute;
+        left: 0;
+        padding: 3% 3% 5% 3.5%;
     }
 
     #ancres
