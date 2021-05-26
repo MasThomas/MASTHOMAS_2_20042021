@@ -1139,16 +1139,23 @@ footer li
     {
         background-color: #FFFFFF;
         width: 100%;
+        height: 100%;
     }
 
     #Hebergements h2
     {
-        padding-bottom: 10px;
+        padding: 0 0 10px 10px;
     }
 
     .heb_container
     {
         width: 100%;
+    }
+
+    .heb_card
+    {
+        width: 87%;
+        margin: 10px 20px;
     }
 
     #bloc_cards
@@ -1166,7 +1173,7 @@ footer li
     {
         flex-direction: column;
         height: 100%;
-        margin: 0px 10px 0px 10px;
+        margin: 0;
     }
 
     #Activites img
