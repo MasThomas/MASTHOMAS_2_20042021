@@ -987,19 +987,19 @@ footer li
 
 @media (min-width:360px) and (max-width:575px) {
 
-    body
+    html
     {
         margin: 0;
     }
 
-    .ancre_hover, .Filtres_boutons
+    .Filtres_boutons
     {
         pointer-events: none;
     }
 
     #Logo
     {
-        padding-top: 0px;
+        padding: 15px 0 0 15px;
         position: absolute;
     }
 
@@ -1007,10 +1007,11 @@ footer li
     {
         flex-wrap: wrap;
         width: 100%;
-        margin: 0px;
+        margin: 0;
+        padding: 0;
     }
 
-    .ancre_hebergement
+    #ancre_hebergement
     {
         order: 2;
         width: 50%;
@@ -1022,7 +1023,13 @@ footer li
         padding-bottom: 15px;
     }
 
-    .ancre_activites
+    #ancre_hebergement a
+    {
+        border-top: 0;
+        padding: 0;
+    }
+
+    #ancre_activites
     {
         order: 3;
         width: 50%;
@@ -1034,7 +1041,7 @@ footer li
         padding-bottom: 15px;
     }
 
-    .ancre_inscription
+    #ancre_inscription
     {
         order: 1;
         width: 100%;
@@ -1045,7 +1052,12 @@ footer li
 
     #recherche
     {
-        margin: 0px 5px 0px 5px;
+        margin: 0px 4% 0px 4%;
+    }
+
+    #map_marker i
+    {
+        padding: 0 5px 5px 5px;
     }
 
     #Filtres
@@ -1060,10 +1072,14 @@ footer li
         width: 100%;
     }
 
+    #Filtres span
+    {
+        margin-right: 10px;
+    }
+
     .Filtres_boutons
     {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
 
     form
@@ -1076,8 +1092,9 @@ footer li
 
     form button
     {
-        width: 60px;
+        width: 50px;
         border-radius: 20px 20px;
+        margin: 0 0 0 -10px;
     }
 
     form p
