@@ -53,7 +53,7 @@ a
     font-size: 1.2em;
 }
 
-.Note .fas, .bluestar
+.note .fas, .bluestar
 
 {
     color:#0065FC;
@@ -66,7 +66,7 @@ a
     color: #F2F2F2;
 }
 
-.Note
+.note
 {
     display: inline-flex;
 }
@@ -80,7 +80,7 @@ header
     justify-content: space-between;
 }
 
-#Logo
+#logo
 {
     padding-top: 40px;
 }
@@ -171,20 +171,20 @@ form p
 
 /* Filtres et Hover Filtres */
 
-#Filtres
+#filtres
 {
     display: flex;
     flex-direction: row;
 }
 
-.Filtres_boutons
+.filtres_boutons
 {
     display: flex;
     flex-direction: row;
     justify-content: center ;
 }
 
-.Filtres_boutons span
+.filtres_boutons span
 {
     display: flex;
     align-items: center;
@@ -198,28 +198,42 @@ form p
     padding: 0px 20px 0 25px;
 }
 
-#Filtres p
+#filtres p
 {
     margin-right:30px;
     font-weight: bold;
 }
 
-.fa-child
+.fa-money-bill-wave
 {
-    padding: 16px 18px 16px 18px !important;
+    padding: 17px 15px 17px 15px;
 }
 
-#Filtres .fas
+.fa-child
+{
+    padding: 17px 19px 17px 19px;
+}
+
+.fa-heart
+{
+    padding: 17px;
+}
+
+.fa-dog
+{
+    padding: 17px 16px 17px 16px;
+}
+
+#filtres .fas
 {
     border-radius: 50%;
-    padding: 16px;
     background-color: #deebff;
     margin-right: 0px;
     position: relative;
 
 }
 
-.Bouton:hover 
+.bouton:hover 
 {
     color:white;
     background-color: #0065FC;
@@ -227,25 +241,25 @@ form p
     transition: all 0.8s 0s;
 }
 
-#Info
+#info
 {
     margin: 30px 0px 30px 5px;
     display: inline-block;
 }
 
-#Info .fas
+#info .fas
 {
     border: 1px solid #dedede;
     padding: 4px 7px 4px 7px;
 }
 
-#Info i
+#info i
 {
     position: absolute;
     margin-top: 15px;
 }
 
-#Info p
+#info p
 {
     margin-left: 25px;
 }
@@ -258,15 +272,15 @@ form p
     width: 100%;
 }
 
-#Hebergements span
+#hebergements span
 {
-    padding-left: 30px;
+    padding: 20px 0 0 30px;
     font-weight: bold;
 }
 
 /* Section Hebergements */
 
-#Hebergements
+#hebergements
 {
     display: flex;
     flex-wrap: wrap;
@@ -278,7 +292,7 @@ form p
     height: 626px;
 }
 
-#Hebergements h2
+#hebergements h2
 {
     padding-left: 30px;
     margin: 30px 0 0 0;
@@ -305,7 +319,7 @@ form p
     box-shadow: 0px 0px 10px 5px #F2F2F2;
 }
 
-#Hebergements img
+#hebergements img
 {
     height: 115px;
     object-fit: cover;
@@ -317,7 +331,7 @@ form p
     padding: 5px 0 0 10px;
 }
 
-#Hebergements p, ul
+#hebergements p, ul
 {
     width: 100%;
     padding: 5px 0px;
@@ -393,7 +407,7 @@ form p
     margin-bottom: 10px;
 }
 
-.Prix
+.prix
 {
     margin: 0 0 35px 0;
 }
@@ -406,24 +420,24 @@ form p
 
 /* Section Activités */
 
-#Activites
+#activites
 {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
 
-#Activites_titre
+#activites_titre
 {
     margin: 60px 0px 10px 0px;
 }
 
-#Activites h2
+#activites h2
 {
     margin: 0;
 }
 
-#Activites_cards
+#activites_cards
 {
     display: flex;
     flex-direction: row;
@@ -431,14 +445,14 @@ form p
     justify-content: space-around;
 }
 
-#Activites p
+#activites p
 {
     padding: 15px 0px 15px 10px;
     margin: 0px;
     font-weight: bolder;
 }
 
-#Vieux_port, #Pomegues, #Frioul, #Calanques, #Ndlg, #Longchamp
+#vieux_port, #pomegues, #frioul, #calanques, #ndlg, #longchamp
 {
     display: flex;
     flex-direction: column;
@@ -448,29 +462,29 @@ form p
     border-radius: 15px;
 }
 
-#Vieux_port img, #Calanques img
+#vieux_port img, #calanques img
 {
     height: 390px;
 }
 
-#Pomegues img, #Longchamp img
+#pomegues img, #longchamp img
 {
     height: 180px;
 }
 
-#Frioul img, #Ndlg img
+#frioul img, #ndlg img
 {
     height: 110px;
 }
 
-.Activites_Duo
+.activites_duo
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#Activites img
+#activites img
 {
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
@@ -535,7 +549,7 @@ footer li
         width: 310px;
     }
 
-    #Activites img
+    #activites img
     {
         width: 100%;
         max-width: 400px;
@@ -559,13 +573,13 @@ footer li
         padding-top: 25px;
     }
     
-    #Hebergements h2
+    #hebergements h2
     {
         padding: 0 0 10px 30px;
         margin: 30px 0 0 0;
     }
 
-    #Hebergements
+    #hebergements
     {
         height: 840px;
     }
@@ -613,12 +627,12 @@ footer li
         height: 840px;
     }
 
-    #Vieux_port, #Pomegues, #Frioul, #Calanques, #Ndlg, #Longchamp
+    #vieux_port, #pomegues, #frioul, #calanques, #ndlg, #longchamp
     {
         margin: 15px;
     }
 
-    #Activites img
+    #activites img
     {
         min-width: 205px;
         max-width: 250px;
@@ -635,12 +649,12 @@ footer li
 
 @media (min-width:768px) and (max-width:991px) {
 
-    #Logo
+    #logo
     {
         padding-top: 30px;
     }
 
-    .Filtres_boutons
+    .filtres_boutons
     {
         pointer-events: none;
     }
@@ -674,20 +688,20 @@ footer li
         height: 51px;
     } 
 
-    #Filtres p
+    #filtres p
     {
         width: 100%;
         text-align: center;
         margin: 30px;
     }
    
-    #Filtres
+    #filtres
     {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #Filtres span
+    #filtres span
     {
         margin-right: 10px;
         padding-right: 12px
@@ -728,7 +742,7 @@ footer li
         width: 200px;
     }
 
-    #Hebergements
+    #hebergements
     {
         width: 100%;
         height: 100%;
@@ -739,7 +753,7 @@ footer li
         justify-content: space-evenly;
     }
 
-    #Hebergements h2
+    #hebergements h2
     {
         text-align: center;
         width: 100%;
@@ -752,39 +766,39 @@ footer li
         width: 300px;
     }
 
-    #Hebergements img
+    #hebergements img
     {
         height: 150px;
     }
 
-    #Activites h2
+    #activites h2
     {
         text-align: center;
     }
 
-    #Activites_cards
+    #activites_cards
     {
         flex-direction: column;
         height: 100%; 
     }
 
-    #Activites img
+    #activites img
     {
         width: 100%;
         height: 200px;
     }
 
-    .Activites_Duo
+    .activites_duo
     {
         flex-direction: row;
     }
 
-    #Vieux_port, #Pomegues, #Frioul, #Calanques, #Ndlg, #Longchamp
+    #vieux_port, #pomegues, #frioul, #calanques, #ndlg, #longchamp
     {
         margin: 20px;
     }
 
-    #Pomegues, #Frioul, #Ndlg, #Longchamp
+    #pomegues, #frioul, #ndlg, #longchamp
     {
         width: 45%;
     }
@@ -812,7 +826,7 @@ footer li
         margin: 0;
     }
 
-    .Filtres_boutons
+    .filtres_boutons
     {
         pointer-events: none;
     }
@@ -823,7 +837,7 @@ footer li
         margin: 0 0 40px 0;
     }
 
-    #Logo
+    #logo
     {
         position: absolute;
         left: 0;
@@ -841,17 +855,17 @@ footer li
         margin: 3.5%;
     }
 
-    #Filtres
+    #filtres
     {
         flex-wrap: wrap;
     }
 
-    #Filtres p
+    #filtres p
     {
         width: 100%;
     }
 
-    .Filtres_boutons
+    .filtres_boutons
     {
         margin: 10px 0;
     }
@@ -892,14 +906,14 @@ footer li
         width: 40%;
     }
 
-    #Hebergements
+    #hebergements
     {
         background-color: #FFFFFF;
         width: 100%;
         height: 100%;
     }
 
-    #Hebergements h2
+    #hebergements h2
     {
         padding-bottom: 10px;
     }
@@ -910,19 +924,19 @@ footer li
         justify-content: space-evenly;
     }
 
-    #Activites h2
+    #activites h2
     {
         padding-left: 30px;
     }
 
-    #Activites_cards
+    #activites_cards
     {
         flex-direction: column;
         height: 100%;
         margin: 0px 10px 0px 10px;
     }
 
-    #Activites img
+    #activites img
     {
         width: 100%;
         height: 10em;
@@ -947,12 +961,12 @@ footer li
         margin: 0;
     }
 
-    .Filtres_boutons
+    .filtres_boutons
     {
         pointer-events: none;
     }
 
-    #Logo
+    #logo
     {
         padding: 15px 0 0 15px;
         position: absolute;
@@ -1011,24 +1025,24 @@ footer li
         padding: 0 5px 5px 5px;
     }
 
-    #Filtres
+    #filtres
     {
         display: flex;
         flex-wrap: wrap;
         margin:0;
     }
 
-    #Filtres p
+    #filtres p
     {
         width: 100%;
     }
 
-    #Filtres span
+    #filtres span
     {
         margin-right: 10px;
     }
 
-    .Filtres_boutons
+    .filtres_boutons
     {
         margin: 10px 0;
     }
@@ -1086,14 +1100,14 @@ footer li
         width: 40%;
     }
 
-    #Hebergements
+    #hebergements
     {
         background-color: #FFFFFF;
         width: 100%;
         height: 100%;
     }
 
-    #Hebergements h2
+    #hebergements h2
     {
         padding: 0 0 10px 10px;
     }
@@ -1115,19 +1129,19 @@ footer li
         justify-content: space-evenly;
     }
 
-    #Activites h2
+    #activites h2
     {
         padding-left: 30px;
     }
 
-    #Activites_cards
+    #activites_cards
     {
         flex-direction: column;
         height: 100%;
         margin: 0;
     }
 
-    #Activites img
+    #activites img
     {
         width: 100%;
         height: 10em;
