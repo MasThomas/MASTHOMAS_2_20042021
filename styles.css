@@ -276,7 +276,7 @@ form p
     background-color: #F2F2F2;
     margin-right: 3%;
     width: 65%;
-    height: 626px%;
+    height: 626px;
 }
 
 #Hebergements h2
@@ -336,7 +336,7 @@ form p
 
 /* Aside Les plus Populaires */
 
-aside
+#populaires
 {
     display: flex;
     flex-direction: column;
@@ -345,7 +345,6 @@ aside
     margin-right: 0px;
     width: 32%;
     height: 626px;
-    padding-bottom: 5px;
 }
 
 #trending_title
@@ -567,14 +566,13 @@ footer li
 
     html
     {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 3%;
+        margin-left: 3%;
     }
 
     #ancres
     {
-        width: 40%;
-        margin: 3%;
+        margin: 0;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -588,10 +586,14 @@ footer li
     
     #Hebergements h2
     {
-    padding-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    padding: 0 0 10px 30px;
+    margin: 30px 0 0 0;
     padding-bottom: 10px
+    }
+
+    #Hebergements
+    {
+        height: 840px;
     }
 
     #trending_title
@@ -604,7 +606,7 @@ footer li
 
     .trend_cards
     {
-    height: 140px;
+    height: 170px;
     display: flex;
     flex-direction: row;
     width: 250px;
@@ -617,7 +619,7 @@ footer li
 
     .trend_cards img
     {
-    width: 100px;
+    width: 120px;
     object-fit: cover;
     border-radius: 15px 0px 0px 15px;
     }
@@ -633,19 +635,21 @@ footer li
         padding-bottom: 5px;
     }
 
-    aside
+    #populaires
     {
-        padding-bottom: 250px;
+        height: 840px;
+    }
+
+    #Vieux_port, #Pomegues, #Frioul, #Calanques, #Ndlg, #Longchamp
+    {
+        margin: 15px;
     }
 
     #Activites img
     {
-    width: 200px;
-    }
-
-    #Activites_cards
-    {
-        height: 500px;
+        min-width: 205px;
+        max-width: 250px;
+        width: 100%;
     }
 
     .footer
@@ -662,34 +666,33 @@ footer li
     {
         margin-left: 20px;
         margin-right: 20px;
-    }
+   }
 
     #Logo
-    {
+   {
         padding-top: 0px;
-    }
+   }
 
-    .ancre_hover, .Filtres_boutons
-    {
+    .Filtres_boutons
+  {
         pointer-events: none;
-    }
+  }
 
     #ancres
-    {
-        margin-right: 0px;
-        margin-top: 30px;
+   {
+        margin: 0;
         width: 50%;
-    }
+   }
 
     #recherche h1
-    {
+   {
         text-align: center;
-    }
+   }
 
-    #recherche :nth-child(2)
-    {
+    #recherche :nth-child(2) 
+   {
         text-align: center;
-    }
+   }
 
     #recherche form
    {
@@ -700,116 +703,116 @@ footer li
        height: 51px;
    } 
 
-   #Filtres p
+    #Filtres p
    {
     width: 100%;
     text-align: center;
     margin: 30px;
    }
    
-   #Filtres
+    #Filtres
    {
        flex-wrap: wrap;
        justify-content: center;
    }
 
-   #Filtres span
+    #Filtres span
    {
        margin-right: 10px;
        padding-right: 12px
    }
 
-   #premier_bloc
+    #premier_bloc
    {
        flex-direction: column-reverse;
    }
 
-   #populaires
+    #populaires
    {
        width: 100%;
        margin-bottom: 20px;
    }
 
-   #trending_title
+    #trending_title
    {
        padding: 10px 20px 10px 20px;
    }
 
-   #populaires h2
+    #populaires h2
    {
        text-align: center;
        width: 100%;
    }
 
-   .trend_cards
+    .trend_cards
    {
        width:400px;
        height: 200px;
    }
 
-   .trend_cards img
+    .trend_cards img
    {
        width: 200px;
    }
 
-   #Hebergements
+    #Hebergements
    {
        width: 100%;
    }
 
-   #Hebergements h2
+    #Hebergements h2
    {
     text-align: center;
     width: 100%;
     padding-bottom: 20px;
    }
 
-   .heb_card
+    .heb_card
    {
        margin-left: 20px;
        margin-right: 20px;
        width: 300px;
    }
 
-   #Hebergements img
+    #Hebergements img
    {
        height: 150px;
    }
 
-   #Activites_cards
+    #Activites_cards
    {
        flex-direction: column;
        height: 100%;
        
    }
 
-   #Activites img
+    #Activites img
    {
        width: 100%;
        height: 200px;
    }
 
-   .Activites_Duo
+    .Activites_Duo
    {
        flex-direction: row;
    }
 
-   #Pomegues, #Frioul, #Ndlg, #Longchamp
+    #Pomegues, #Frioul, #Ndlg, #Longchamp
    {
        width: 300px;
    }
 
-   footer
+    footer
    {
        flex-direction: column;
    }
 
-   .footer
+    .footer
    {
        margin-left: 0;
    }
 
-   footer h3, ul
+    footer h3, ul
    {
        text-align: center;
    }
