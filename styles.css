@@ -457,7 +457,7 @@ form p
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px 5px #F2F2F2;
-    margin: 21.5px, 10px;
+    margin: 21.5px 10px;
     padding: 0px;
     border-radius: 15px;
 }
@@ -568,8 +568,8 @@ footer li
     #activites img
     {
         width: 100%;
-        max-width: 400px;
-        min-width: 245px;
+        max-width: 320px;
+        min-width: 240px;
     }
 
     .activites_selector
