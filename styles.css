@@ -417,7 +417,6 @@ form p
     padding-bottom: 15px;
 }
 
-
 /* Section Activités */
 
 #activites
@@ -584,9 +583,6 @@ footer li
     #ancres
     {
         margin: 0;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
     }
     
     .ancre_hover a:hover
@@ -598,7 +594,6 @@ footer li
     #hebergements h2
     {
         padding: 0 0 10px 30px;
-        margin: 30px 0 0 0;
     }
 
     #hebergements
@@ -608,30 +603,19 @@ footer li
 
     #trending_title
     {
-        display: flex;
-        justify-content: space-between;
         padding: 10px 20px 0px 20px;
-        align-items: center;
     }
 
     .trend_cards
     {
         height: 170px;
-        display: flex;
         flex-direction: row;
         width: 250px;
-        padding: 5px;
-        background-color: #FFFFFF;
-        margin: 10px;
-        border-radius: 20px;
-        box-shadow: 0px 0px 10px 5px #F2F2F2;
     }
 
     .trend_cards img
     {
         width: 120px;
-        object-fit: cover;
-        border-radius: 15px 0px 0px 15px;
     }
 
     .Prix
@@ -663,7 +647,6 @@ footer li
 
     .footer_details
     {
-        padding-top: 30px;
         margin-left: 0px;
     }
 
@@ -671,14 +654,14 @@ footer li
 
 @media (min-width:768px) and (max-width:991px) {
 
-    #logo
-    {
-        padding-top: 30px;
-    }
-
     .filtres_boutons
     {
         pointer-events: none;
+    }
+
+    #logo
+    {
+        padding-top: 30px;
     }
 
     #ancres
@@ -707,7 +690,6 @@ footer li
     {
         display: flex;
         justify-content: center;
-        height: 51px;
     } 
 
     #filtres p
@@ -1080,7 +1062,6 @@ footer li
        display: flex;
        justify-content: center;
        margin-bottom: 30px;
-       height: 51px;
     }
 
     form button
