@@ -896,7 +896,8 @@ footer li
     {
         width: 80px;
     }
-    form p
+
+    #button_text
     {
         display: none;
     }
@@ -1089,7 +1090,7 @@ footer li
         margin: 0 0 0 -10px;
     }
 
-    form p
+    #button_text
     {
         display: none;
     }
