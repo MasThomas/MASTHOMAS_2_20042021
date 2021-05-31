@@ -864,6 +864,11 @@ footer li
         margin: 0;
     }
 
+    #ancre_hebergement a
+    {
+        padding-top: 28px;
+    }
+
     .filtres_boutons
     {
         pointer-events: none;
