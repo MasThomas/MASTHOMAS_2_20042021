@@ -167,9 +167,10 @@ form button .fas
     display: none;
 }
 
-form p
+#button_text
 {
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 /* Filtres et Hover Filtres */
