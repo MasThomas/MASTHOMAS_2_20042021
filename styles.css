@@ -689,6 +689,11 @@ footer li
         width: 50%;
     }
 
+    #ancre_hebergement a
+    {
+        padding-top: 28px;
+    }
+
     #recherche h1
     {
         margin-top: 40px;
@@ -703,6 +708,16 @@ footer li
     #map_marker i
     {
         padding: 0 5px 5px 5px;
+    }
+
+    #map_marker
+    {
+        margin-bottom: 27px
+    }
+
+    input
+    {
+        height: 50px;
     }
 
     #recherche form
