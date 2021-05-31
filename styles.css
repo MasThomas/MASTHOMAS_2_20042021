@@ -274,6 +274,7 @@ form button .fas
 {
     display: flex;
     width: 100%;
+    margin: 0 0 40px 0;
 }
 
 #hebergements span
@@ -436,7 +437,7 @@ form button .fas
 
 #activites_titre
 {
-    margin: 60px 0px 10px 0px;
+    margin: 20px 0 10px 0;
 }
 
 #activites h2
@@ -597,6 +598,11 @@ footer li
     {
         margin: 0;
     }
+
+    #ancre_hebergement a
+    {
+        padding-top: 28px;
+    }
     
     .ancre_hover a:hover
     {
@@ -611,7 +617,7 @@ footer li
 
     #hebergements
     {
-        height: 840px;
+        height: 860px;
     }
 
     #trending_title
@@ -643,7 +649,7 @@ footer li
 
     #populaires
     {
-        height: 840px;
+        height: 860px;
     }
 
     .activites_selector
